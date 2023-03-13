@@ -1,4 +1,4 @@
-C_SRC := main.cpp
+C_SRC := write-bridge.cpp
 CFLAGS := -fstack-protector-all -O
 
 ifeq ($(or $(COMSPEC),$(ComSpec)),)
