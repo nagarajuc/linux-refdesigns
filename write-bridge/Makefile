@@ -21,4 +21,4 @@ $(OBJ): $(C_SRC)
 	$(CXX) $(CFLAGS) -c $< -o $@
 
 $(ELF): $(OBJ)
-	$(CC) $(CFLAGS) -o $@ -lpthread
+	$(CXX) $(CFLAGS) -o $@ -lpthread
