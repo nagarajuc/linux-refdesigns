@@ -76,10 +76,13 @@ int main(int argc, char** argv)
 		// read the selected Bridge Interface 
 		bool lwBdrige = false;
 		uint8_t address_space = 0; // 0: HPS2FPGA | 1: LWHPS2FPGA | 2: MPU
-		if (std::string(argv[1]) == "-lw")
+		if (std::string(argv[1]) == "-lw") {
+			address_space = 1;
 			lwBdrige = true;
-		else if (std::string(argv[1]) == "-mpu")
+		}
+		else if (std::string(argv[1]) == "-mpu") {
 			address_space = 2;
+		}
 
 		/// check the value input type (Dec or Hex) ///
 		// 1: DEC Value input | 0: HEX Dec Input | 2: Binary Bit Set/Reset 
