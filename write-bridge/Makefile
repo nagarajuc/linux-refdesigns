@@ -1,5 +1,5 @@
 C_SRC := main.cpp
-CFLAGS := -Werror -Wall -fstack-protector-all -O
+CFLAGS := -fstack-protector-all -O
 
 ifeq ($(or $(COMSPEC),$(ComSpec)),)
 RM := rm -rf
