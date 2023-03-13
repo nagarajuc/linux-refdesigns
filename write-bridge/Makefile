@@ -8,7 +8,7 @@ RM := cs-rm -rf
 endif
 
 ELF ?= $(basename $(firstword $(C_SRC)))
-OBJ := $(patsubst %.c,%.o,$(C_SRC))
+OBJ := $(patsubst %.cc,%.o,$(C_SRC))
 
 .PHONY: all
 all: $(ELF) $(OBJ)
