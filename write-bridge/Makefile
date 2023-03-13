@@ -11,14 +11,12 @@ ELF ?= $(basename $(firstword $(C_SRC)))
 OBJ := $(patsubst %.cc,%.o,$(C_SRC))
 
 .PHONY: all
-all: $(ELF) $(OBJ)
+all: $(OBJ)
 
 .PHONY:
 clean:
 	$(RM) $(ELF) *.o
 
 $(OBJ): $(C_SRC)
-	$(CXX) $(CFLAGS) -c $< -o $@
+	$(CXX) $(CFLAGS) $< -o $@
 
-$(ELF): $(OBJ)
-	$(CXX) $(CFLAGS) -o $@ -lpthread
