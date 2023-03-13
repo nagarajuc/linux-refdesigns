@@ -18,7 +18,7 @@ clean:
 	$(RM) $(ELF) *.o
 
 $(OBJ): $(C_SRC)
-	$(CXX) $(CFLAGS) -c $< -o $@
+	$(CPP) $(CFLAGS) -c $< -o $@
 
 $(ELF): $(OBJ)
 	$(CC) $(CFLAGS) -o $@ -lpthread
