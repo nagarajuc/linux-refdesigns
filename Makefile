@@ -1,4 +1,4 @@
-DIRS=hello write-bridge
+DIRS=hello write-bridge read-bridge
 
 all:
 	@for subd in $(DIRS); do \
