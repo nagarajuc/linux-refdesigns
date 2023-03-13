@@ -61,7 +61,7 @@ bool checkIfInputIsVailed(string input, bool DecHex)
 }
 #pragma endregion
 
-int main(int argc, const char* argv[])
+int main(void)
 {
 	// Debugging Test values 
 	//argv[1] = "-hf";
