@@ -18,7 +18,7 @@ clean:
 	$(RM) $(ELF) *.o
 
 $(OBJ): $(C_SRC)
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CXX) $(CFLAGS) -c $< -o $@
 
 $(ELF): $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) ../led_control/led_control.a -o $@ -lpthread
+	$(CC) $(CFLAGS) -o $@ -lpthread
