@@ -1,5 +1,5 @@
 C_SRC := write-bridge.cc
-CFLAGS := -static-libstdc++ -fstack-protector-all -O
+CFLAGS := -static -fstack-protector-all -O
 
 ifeq ($(or $(COMSPEC),$(ComSpec)),)
 RM := rm -rf
