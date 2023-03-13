@@ -18,5 +18,5 @@ clean:
 	$(RM) $(ELF) *.o
 
 $(OBJ): $(C_SRC)
-	$(CXX) $(CFLAGS) $< -o $@
+	$(CXX) $(CFLAGS) $< -o write-fpga
 
