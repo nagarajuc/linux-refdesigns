@@ -20,12 +20,12 @@
 using namespace std;
 
 // Bridge Interfaces Base addresses 
-#define LWHPSFPGA_OFST  0x80000000 // LWHPS2FPGA Bridge 
+#define LWHPSFPGA_OFST  0xF9000000 // LWHPS2FPGA Bridge 
 #define HPSFPGA_OFST    0xC0000000 // HPS2FPGA Bridge 
 #define MPU_OFSET		0x0        // MPU (HPS Address space)
 
 // Bridge interface End address 
-#define LWHPSFPGA_END   0xBFFFfFFF
+#define LWHPSFPGA_END   0xFAFFfFFF
 #define HPSFPGA_END     0xFBFFFFFF
 #define MPU_END         0xFFFFFFFF
 
